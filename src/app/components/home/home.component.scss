@@ -1,0 +1,99 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
+
+
+.app {
+    width: 100rem;
+    height: 100rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+.topic{
+background-color: red;
+font-size: 10rem;
+padding-left: 2rem;
+}
+
+
+
+.navbar .tasks{
+    padding-right: 75rem;
+}
+
+
+.homeform{
+
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    gap: 0.5rem;
+    display: flex;
+
+}
+.homeform input{
+    width: 50rem;
+    height: 8rem;  
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.homeform .add{
+    padding-right: 2rem;
+    display: flex;
+
+}
+.homeform i{
+    font-size: 2.5rem;
+    height: 4rem;
+    width: 5rem;
+    cursor: pointer;
+    border-color: black;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    align-items: left;
+    
+}
+
+.checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+.checked 
+{
+    text-decoration: line-through;
+    text-align: justify;
+}
+
+
+  .delete-icon 
+  {
+    display: inline-block;
+    cursor: pointer;
+    size: 3rem;
+    font-size: 1.5rem;
+   
+  }
+
+.deleter{
+    padding-left: 2rem;
+    padding-top: 3rem;
+   
+}
+.deleter .delBut{
+    background-color: aliceblue;
+    
+    
+}
+.dstxt{
+   padding-top: 2rem;
+}
+.lst{
+    padding-top: 2rem;
+}
+

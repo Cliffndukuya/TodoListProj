@@ -1,0 +1,38 @@
+
+<div >   
+
+
+
+
+    <div class="homeform">
+        <form (submit)="addTask($event)">
+
+            <input [(ngModel)]="newDoTask" (keyup.enter)="newDoTask=''" class="input" name="newDoTask">
+            <button class="add" type="submit" [disabled]="newDoTask===''" onclick="(submit)"><i class="bi bi-plus"></i></button>
+
+         </form>
+    </div>
+
+    <div>
+        <ul class="lst">
+        <li *ngFor= "let task of tasks; let i=index" >
+
+            <input type="checkbox" class="checkbox" [(ngModel)]="task.completed" />
+                
+            <span [ngClass]="{'checked': task.completed}"> {{ task.newDoTask }} </span>
+        
+    <span (click)="deleteTask(i)" class="delete-icon"><i class="bi bi-file-excel"></i></span>
+
+        </li>
+        </ul>
+
+    <div class="deleter">
+    
+            <button (click)="deleteSelecTask()" class="delBut">Delete Selected</button>
+            
+    </div>
+</div>
+  
+
+</div>
+
